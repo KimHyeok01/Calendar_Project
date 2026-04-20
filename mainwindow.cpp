@@ -7,46 +7,56 @@
 #include <QSqlQuery>
 #include <QDebug>
 
+
+
+void printCurrentDbState() {
+    qDebug() << "Current DB State:";
+    // 오늘 날짜 기준으로 전체 조회 (테스트 편의상 getSchedulesForDay 활용)
+    QList<QVariantMap> allData = DatabaseManager::instance().getSchedulesForDay(QDate::currentDate());
+
+    if (allData.isEmpty()) {
+        qDebug() << "Empty";
+    } else {
+        for (const auto& row : allData) {
+            qDebug() << "ID:" << row["id"].toInt()
+            << "| Title:" << row["title"].toString()
+            << "| Start:" << row["start"].toString()
+            << "| End:" << row["end"].toString()
+            << "| Color:" << row["color"].toString();
+        }
+    }
+    qDebug() << "---------------------------------------";
+}
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    if (DatabaseManager::instance().initDatabase("calendar_data.db")) {
-        qDebug() << "---------------------------------------";
-        qDebug() << "SUCCESS: Database initialized.";
-    }
+    if (!DatabaseManager::instance().initDatabase("calendar_data.db")) return;
+    qDebug() << "Database Initialized";
 
-    // 2. 테스트용 샘플 데이터 생성
-    // 현재 시간부터 3시간 동안 진행되는 일정 예시
-    QDateTime startTime = QDateTime::currentDateTime();
-    QDateTime endTime = startTime.addSecs(50 * 3600); // 3시간 후
+    // 2. Create 테스트
+    QDateTime start = QDateTime::currentDateTime();
+    QDateTime end = start.addSecs(3600);
+    DatabaseManager::instance().addSchedule("Test Schedule", "Description", start, end, "#FF5733");
+    qDebug() << "Step 1: Data Added";
+    printCurrentDbState();
 
-    bool success = DatabaseManager::instance().addSchedule(
-        "임베디드 프로젝트 테스트",
-        "타임트리 스타일 DB 테스트 중",
-        startTime,
-        endTime,
-        "#FF5733"
-        );
+    // 3. Update 테스트 (가장 최근 데이터의 ID 사용)
+    QList<QVariantMap> list = DatabaseManager::instance().getSchedulesForDay(start.date());
+    if (!list.isEmpty()) {
+        int targetId = list.last()["id"].toInt();
+        QDateTime newEnd = start.addSecs(7200);
+        DatabaseManager::instance().updateSchedule(targetId, "Updated Title", "New Desc", start, newEnd, "#00FF00");
+        qDebug() << "Step 2: Data Updated (ID:" << targetId << ")";
+        printCurrentDbState();
 
-    if (success) {
-        qDebug() << "SUCCESS: Sample schedule added.";
-    }
-
-    // 3. 데이터 조회 테스트 (오늘 날짜 기준)
-    qDebug() << "CHECK: Loading schedules for today...";
-    QList<QVariantMap> todaySchedules = DatabaseManager::instance().getSchedulesForDay(startTime.date());
-
-    for (const QVariantMap& schedule : todaySchedules) {
-        qDebug() << "=======================================";
-        qDebug() << "ID:      " << schedule["id"].toInt();
-        qDebug() << "Title:   " << schedule["title"].toString();
-        qDebug() << "Start:   " << schedule["start"].toString();
-        qDebug() << "End:     " << schedule["end"].toString();
-        qDebug() << "Color:   " << schedule["color"].toString();
-        qDebug() << "=======================================";
+        // 4. Delete 테스트
+        DatabaseManager::instance().deleteSchedule(targetId);
+        qDebug() << "Step 3: Data Deleted (ID:" << targetId << ")";
+        printCurrentDbState();
     }
 }
 

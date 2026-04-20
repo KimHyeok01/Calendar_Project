@@ -97,3 +97,31 @@ QList<QVariantMap> DatabaseManager::getSchedulesForDay(const QDate& date) {
     }
     return schedules;
 }
+
+
+// [Update] 기존 일정 수정
+bool DatabaseManager::updateSchedule(int id, const QString& title, const QString& content,
+                                     const QDateTime& start, const QDateTime& end, const QString& color) {
+    QSqlQuery query;
+    query.prepare("UPDATE schedules SET title = :title, content = :content, "
+                  "start_time = :start, end_time = :end, color = :color "
+                  "WHERE id = :id");
+
+    query.bindValue(":title", title);
+    query.bindValue(":content", content);
+    query.bindValue(":start", start.toString("yyyy-MM-dd HH:mm:ss"));
+    query.bindValue(":end", end.toString("yyyy-MM-dd HH:mm:ss"));
+    query.bindValue(":color", color);
+    query.bindValue(":id", id);
+
+    return query.exec();
+}
+
+// [Delete] 일정 삭제
+bool DatabaseManager::deleteSchedule(int id) {
+    QSqlQuery query;
+    query.prepare("DELETE FROM schedules WHERE id = :id");
+    query.bindValue(":id", id);
+
+    return query.exec();
+}
