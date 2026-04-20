@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\workspace\exercise\Calendar
+CMAKE_SOURCE_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Calendar.dir/depend.make
@@ -71,76 +71,92 @@ include CMakeFiles/Calendar.dir/flags.make
 Calendar_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 Calendar_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/uic.exe
 Calendar_autogen/timestamp: CMakeFiles/Calendar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Calendar"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/workspace/exercise/Calendar/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/Calendar_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/workspace/exercise/Calendar/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Calendar"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/VEDA/qt-workspace/exercise/Calendar_Project/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/Calendar_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/VEDA/qt-workspace/exercise/Calendar_Project/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/timestamp
 
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: CMakeFiles/Calendar.dir/flags.make
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: CMakeFiles/Calendar.dir/includes_CXX.rsp
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: Calendar_autogen/mocs_compilation.cpp
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: CMakeFiles/Calendar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.obj -c C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.obj -c C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp
 
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp > CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp > CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp -o CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp -o CMakeFiles\Calendar.dir\Calendar_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/Calendar.dir/main.cpp.obj: CMakeFiles/Calendar.dir/flags.make
 CMakeFiles/Calendar.dir/main.cpp.obj: CMakeFiles/Calendar.dir/includes_CXX.rsp
-CMakeFiles/Calendar.dir/main.cpp.obj: C:/workspace/exercise/Calendar/main.cpp
+CMakeFiles/Calendar.dir/main.cpp.obj: C:/VEDA/qt-workspace/exercise/Calendar_Project/main.cpp
 CMakeFiles/Calendar.dir/main.cpp.obj: CMakeFiles/Calendar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Calendar.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/main.cpp.obj -MF CMakeFiles\Calendar.dir\main.cpp.obj.d -o CMakeFiles\Calendar.dir\main.cpp.obj -c C:\workspace\exercise\Calendar\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Calendar.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/main.cpp.obj -MF CMakeFiles\Calendar.dir\main.cpp.obj.d -o CMakeFiles\Calendar.dir\main.cpp.obj -c C:\VEDA\qt-workspace\exercise\Calendar_Project\main.cpp
 
 CMakeFiles/Calendar.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Calendar.dir/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\exercise\Calendar\main.cpp > CMakeFiles\Calendar.dir\main.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VEDA\qt-workspace\exercise\Calendar_Project\main.cpp > CMakeFiles\Calendar.dir\main.cpp.i
 
 CMakeFiles/Calendar.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Calendar.dir/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\exercise\Calendar\main.cpp -o CMakeFiles\Calendar.dir\main.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VEDA\qt-workspace\exercise\Calendar_Project\main.cpp -o CMakeFiles\Calendar.dir\main.cpp.s
 
 CMakeFiles/Calendar.dir/mainwindow.cpp.obj: CMakeFiles/Calendar.dir/flags.make
 CMakeFiles/Calendar.dir/mainwindow.cpp.obj: CMakeFiles/Calendar.dir/includes_CXX.rsp
-CMakeFiles/Calendar.dir/mainwindow.cpp.obj: C:/workspace/exercise/Calendar/mainwindow.cpp
+CMakeFiles/Calendar.dir/mainwindow.cpp.obj: C:/VEDA/qt-workspace/exercise/Calendar_Project/mainwindow.cpp
 CMakeFiles/Calendar.dir/mainwindow.cpp.obj: CMakeFiles/Calendar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Calendar.dir/mainwindow.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/mainwindow.cpp.obj -MF CMakeFiles\Calendar.dir\mainwindow.cpp.obj.d -o CMakeFiles\Calendar.dir\mainwindow.cpp.obj -c C:\workspace\exercise\Calendar\mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Calendar.dir/mainwindow.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/mainwindow.cpp.obj -MF CMakeFiles\Calendar.dir\mainwindow.cpp.obj.d -o CMakeFiles\Calendar.dir\mainwindow.cpp.obj -c C:\VEDA\qt-workspace\exercise\Calendar_Project\mainwindow.cpp
 
 CMakeFiles/Calendar.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Calendar.dir/mainwindow.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\exercise\Calendar\mainwindow.cpp > CMakeFiles\Calendar.dir\mainwindow.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VEDA\qt-workspace\exercise\Calendar_Project\mainwindow.cpp > CMakeFiles\Calendar.dir\mainwindow.cpp.i
 
 CMakeFiles/Calendar.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Calendar.dir/mainwindow.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\exercise\Calendar\mainwindow.cpp -o CMakeFiles\Calendar.dir\mainwindow.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VEDA\qt-workspace\exercise\Calendar_Project\mainwindow.cpp -o CMakeFiles\Calendar.dir\mainwindow.cpp.s
 
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: CMakeFiles/Calendar.dir/flags.make
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: CMakeFiles/Calendar.dir/includes_CXX.rsp
-CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: C:/workspace/exercise/Calendar/DatabaseManager.cpp
+CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: C:/VEDA/qt-workspace/exercise/Calendar_Project/DatabaseManager.cpp
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: CMakeFiles/Calendar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj -MF CMakeFiles\Calendar.dir\DatabaseManager.cpp.obj.d -o CMakeFiles\Calendar.dir\DatabaseManager.cpp.obj -c C:\workspace\exercise\Calendar\DatabaseManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj -MF CMakeFiles\Calendar.dir\DatabaseManager.cpp.obj.d -o CMakeFiles\Calendar.dir\DatabaseManager.cpp.obj -c C:\VEDA\qt-workspace\exercise\Calendar_Project\DatabaseManager.cpp
 
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Calendar.dir/DatabaseManager.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\workspace\exercise\Calendar\DatabaseManager.cpp > CMakeFiles\Calendar.dir\DatabaseManager.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VEDA\qt-workspace\exercise\Calendar_Project\DatabaseManager.cpp > CMakeFiles\Calendar.dir\DatabaseManager.cpp.i
 
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Calendar.dir/DatabaseManager.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\workspace\exercise\Calendar\DatabaseManager.cpp -o CMakeFiles\Calendar.dir\DatabaseManager.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VEDA\qt-workspace\exercise\Calendar_Project\DatabaseManager.cpp -o CMakeFiles\Calendar.dir\DatabaseManager.cpp.s
+
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj: CMakeFiles/Calendar.dir/flags.make
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj: CMakeFiles/Calendar.dir/includes_CXX.rsp
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj: C:/VEDA/qt-workspace/exercise/Calendar_Project/widgets/DayCell.cpp
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj: CMakeFiles/Calendar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj -MF CMakeFiles\Calendar.dir\widgets\DayCell.cpp.obj.d -o CMakeFiles\Calendar.dir\widgets\DayCell.cpp.obj -c C:\VEDA\qt-workspace\exercise\Calendar_Project\widgets\DayCell.cpp
+
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Calendar.dir/widgets/DayCell.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\VEDA\qt-workspace\exercise\Calendar_Project\widgets\DayCell.cpp > CMakeFiles\Calendar.dir\widgets\DayCell.cpp.i
+
+CMakeFiles/Calendar.dir/widgets/DayCell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Calendar.dir/widgets/DayCell.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\VEDA\qt-workspace\exercise\Calendar_Project\widgets\DayCell.cpp -o CMakeFiles\Calendar.dir\widgets\DayCell.cpp.s
 
 # Object files for target Calendar
 Calendar_OBJECTS = \
 "CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/Calendar.dir/main.cpp.obj" \
 "CMakeFiles/Calendar.dir/mainwindow.cpp.obj" \
-"CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj"
+"CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj" \
+"CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj"
 
 # External object files for target Calendar
 Calendar_EXTERNAL_OBJECTS =
@@ -149,6 +165,7 @@ Calendar.exe: CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj
 Calendar.exe: CMakeFiles/Calendar.dir/main.cpp.obj
 Calendar.exe: CMakeFiles/Calendar.dir/mainwindow.cpp.obj
 Calendar.exe: CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj
+Calendar.exe: CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj
 Calendar.exe: CMakeFiles/Calendar.dir/build.make
 Calendar.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 Calendar.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Sql.a
@@ -158,7 +175,7 @@ Calendar.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 Calendar.exe: CMakeFiles/Calendar.dir/linkLibs.rsp
 Calendar.exe: CMakeFiles/Calendar.dir/objects1.rsp
 Calendar.exe: CMakeFiles/Calendar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Calendar.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Calendar.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Calendar.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +187,6 @@ CMakeFiles/Calendar.dir/clean:
 .PHONY : CMakeFiles/Calendar.dir/clean
 
 CMakeFiles/Calendar.dir/depend: Calendar_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\workspace\exercise\Calendar C:\workspace\exercise\Calendar C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\Calendar.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\VEDA\qt-workspace\exercise\Calendar_Project C:\VEDA\qt-workspace\exercise\Calendar_Project C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\Calendar.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Calendar.dir/depend
 

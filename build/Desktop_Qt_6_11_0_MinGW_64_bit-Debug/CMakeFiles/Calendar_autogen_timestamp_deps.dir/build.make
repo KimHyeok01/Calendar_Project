@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\workspace\exercise\Calendar
+CMAKE_SOURCE_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Utility rule file for Calendar_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/Calendar_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Calendar_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Calendar_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\workspace\exercise\Calendar C:\workspace\exercise\Calendar C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\Calendar_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\VEDA\qt-workspace\exercise\Calendar_Project C:\VEDA\qt-workspace\exercise\Calendar_Project C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\Calendar_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Calendar_autogen_timestamp_deps.dir/depend
 

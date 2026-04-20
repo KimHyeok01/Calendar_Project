@@ -56,10 +56,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\workspace\exercise\Calendar
+CMAKE_SOURCE_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -295,6 +295,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calendar.dir\build.make CMakeFiles/Calendar.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+widgets/DayCell.obj: widgets/DayCell.cpp.obj
+.PHONY : widgets/DayCell.obj
+
+# target to build an object file
+widgets/DayCell.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calendar.dir\build.make CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj
+.PHONY : widgets/DayCell.cpp.obj
+
+widgets/DayCell.i: widgets/DayCell.cpp.i
+.PHONY : widgets/DayCell.i
+
+# target to preprocess a source file
+widgets/DayCell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calendar.dir\build.make CMakeFiles/Calendar.dir/widgets/DayCell.cpp.i
+.PHONY : widgets/DayCell.cpp.i
+
+widgets/DayCell.s: widgets/DayCell.cpp.s
+.PHONY : widgets/DayCell.s
+
+# target to generate assembly for a file
+widgets/DayCell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calendar.dir\build.make CMakeFiles/Calendar.dir/widgets/DayCell.cpp.s
+.PHONY : widgets/DayCell.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -322,6 +346,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... widgets/DayCell.obj
+	@echo ... widgets/DayCell.i
+	@echo ... widgets/DayCell.s
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
 CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: \
- C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp \
- C:\workspace\exercise\Calendar\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/workspace/exercise/Calendar/mainwindow.h \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\mocs_compilation.cpp \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/VEDA/qt-workspace/exercise/Calendar_Project/mainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -389,4 +389,29 @@ CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ C:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\Calendar_autogen\IMAN36LHMA/moc_DayCell.cpp \
+ C:/VEDA/qt-workspace/exercise/Calendar_Project/widgets/DayCell.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QFrame \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QPropertyAnimation \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qpropertyanimation.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qvariantanimation.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qabstractanimation.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qeasingcurve.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h

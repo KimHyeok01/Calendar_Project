@@ -9,10 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Calendar_autogen/timestamp" "custom" "Calendar_autogen/deps"
-  "C:/workspace/exercise/Calendar/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/mocs_compilation.cpp" "CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj.d"
-  "C:/workspace/exercise/Calendar/DatabaseManager.cpp" "CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj.d"
-  "C:/workspace/exercise/Calendar/main.cpp" "CMakeFiles/Calendar.dir/main.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/main.cpp.obj.d"
-  "C:/workspace/exercise/Calendar/mainwindow.cpp" "CMakeFiles/Calendar.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/mainwindow.cpp.obj.d"
+  "C:/VEDA/qt-workspace/exercise/Calendar_Project/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/mocs_compilation.cpp" "CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/Calendar_autogen/mocs_compilation.cpp.obj.d"
+  "C:/VEDA/qt-workspace/exercise/Calendar_Project/DatabaseManager.cpp" "CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj.d"
+  "C:/VEDA/qt-workspace/exercise/Calendar_Project/main.cpp" "CMakeFiles/Calendar.dir/main.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/main.cpp.obj.d"
+  "C:/VEDA/qt-workspace/exercise/Calendar_Project/mainwindow.cpp" "CMakeFiles/Calendar.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/mainwindow.cpp.obj.d"
+  "C:/VEDA/qt-workspace/exercise/Calendar_Project/widgets/DayCell.cpp" "CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj" "gcc" "CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

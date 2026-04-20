@@ -26,6 +26,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         DatabaseManager.h
         DatabaseManager.cpp
+        widgets/DayCell.h
+        widgets/DayCell.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Calendar APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

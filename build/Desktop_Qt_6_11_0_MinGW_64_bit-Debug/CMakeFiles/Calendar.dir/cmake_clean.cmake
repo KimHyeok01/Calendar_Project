@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Calendar.dir/main.cpp.obj.d"
   "CMakeFiles/Calendar.dir/mainwindow.cpp.obj"
   "CMakeFiles/Calendar.dir/mainwindow.cpp.obj.d"
+  "CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj"
+  "CMakeFiles/Calendar.dir/widgets/DayCell.cpp.obj.d"
   "Calendar.exe"
   "Calendar.exe.manifest"
   "Calendar.pdb"

@@ -1,11 +1,14 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "DatabaseManager.h"
+#include "./widgets/DayCell.h"
 
 #include <QSqlDatabase>
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QDebug>
+#include <QDate>
+#include <QGridLayout>
 
 
 
@@ -57,7 +60,32 @@ MainWindow::MainWindow(QWidget *parent)
         DatabaseManager::instance().deleteSchedule(targetId);
         qDebug() << "Step 3: Data Deleted (ID:" << targetId << ")";
         printCurrentDbState();
+    QWidget* centralWidget = new QWidget(this);
+    QGridLayout* gridLayout = new QGridLayout(centralWidget);
+    gridLayout->setSpacing(0); // 셀 간 간격 제거
+
+    QDate startDate(2026, 4, 1);
+
+    int offset = startDate.dayOfWeek() - 1;
+    QDate currentDisplayDate = startDate.addDays(-offset);
+
+    for (int row = 0; row < 6; ++row) {
+        for (int col = 0; col < 7; ++col) {
+            DayCell* cell = new DayCell(this);
+            cell->setDate(currentDisplayDate);
+
+        // 이번 달이 아닌 날짜는 톤 다운 (QSS활용)
+        if(currentDisplayDate.month() != 4) {
+            cell->setStyleSheet("background-color: #F5F5F5; color: #CCCCCC;");
+        }
+
+        gridLayout->addWidget(cell, row, col);
+        currentDisplayDate = currentDisplayDate.addDays(1);
     }
+
+    setCentralWidget(centralWidget);
+    }
+}
 }
 
 MainWindow::~MainWindow()

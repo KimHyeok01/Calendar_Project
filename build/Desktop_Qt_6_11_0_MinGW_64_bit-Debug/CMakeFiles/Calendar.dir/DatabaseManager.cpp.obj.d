@@ -1,6 +1,6 @@
 CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: \
- C:\workspace\exercise\Calendar\DatabaseManager.cpp \
- C:\workspace\exercise\Calendar\DatabaseManager.h \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\DatabaseManager.cpp \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\DatabaseManager.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qtsqlglobal.h \
@@ -356,6 +356,7 @@ CMakeFiles/Calendar.dir/DatabaseManager.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QDateTime \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QVariantMap \

@@ -1,5 +1,5 @@
-C:/workspace/exercise/Calendar/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/workspace/exercise/Calendar/mainwindow.h \
-  C:/workspace/exercise/Calendar/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/moc_predefs.h \
+C:/VEDA/qt-workspace/exercise/Calendar_Project/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/VEDA/qt-workspace/exercise/Calendar_Project/mainwindow.h \
+  C:/VEDA/qt-workspace/exercise/Calendar_Project/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/Calendar_autogen/moc_predefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \

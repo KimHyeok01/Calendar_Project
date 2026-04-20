@@ -1,6 +1,6 @@
 CMakeFiles/Calendar.dir/main.cpp.obj: \
- C:\workspace\exercise\Calendar\main.cpp \
- C:\workspace\exercise\Calendar\mainwindow.h \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\main.cpp \
+ C:\VEDA\qt-workspace\exercise\Calendar_Project\mainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

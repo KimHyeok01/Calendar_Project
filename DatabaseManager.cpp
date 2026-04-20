@@ -56,7 +56,7 @@ QList<QVariantMap> DatabaseManager::getSchedulesForMonth(int year, int month) {
 
     QString datePattern = QString("%1-%2").arg(year).arg(month, 2, 10, QChar('0'));
 
-    // 수정: start_date -> start_time, end_date -> end_time
+
     query.prepare("SELECT * FROM schedules WHERE start_time LIKE :pattern OR end_time LIKE :pattern");
     query.bindValue(":pattern", datePattern + "%");
 
@@ -67,6 +67,8 @@ QList<QVariantMap> DatabaseManager::getSchedulesForMonth(int year, int month) {
             item["title"] = query.value("title");
             item["start"] = query.value("start_time");
             item["end"] = query.value("end_time"); // [추가] 종료 시간 매핑
+            item["start_time"] = query.value("start_time");
+            item["end_time"] = query.value("end_time");
             item["color"] = query.value("color");
             schedules.append(item);
         }
