@@ -54,9 +54,10 @@ QList<QVariantMap> DatabaseManager::getSchedulesForMonth(int year, int month) {
     QList<QVariantMap> schedules;
     QSqlQuery query;
 
-    // 해당 월에 걸쳐있는 일정을 모두 가져오는 쿼리
     QString datePattern = QString("%1-%2").arg(year).arg(month, 2, 10, QChar('0'));
-    query.prepare("SELECT * FROM schedules WHERE start_date LIKE :pattern OR end_date LIKE :pattern");
+
+    // 수정: start_date -> start_time, end_date -> end_time
+    query.prepare("SELECT * FROM schedules WHERE start_time LIKE :pattern OR end_time LIKE :pattern");
     query.bindValue(":pattern", datePattern + "%");
 
     if (query.exec()) {
@@ -64,14 +65,13 @@ QList<QVariantMap> DatabaseManager::getSchedulesForMonth(int year, int month) {
             QVariantMap item;
             item["id"] = query.value("id");
             item["title"] = query.value("title");
-            item["start_date"] = query.value("start_date");
-            item["end_date"] = query.value("end_date");
+            item["start"] = query.value("start_time");
+            item["end"] = query.value("end_time"); // [추가] 종료 시간 매핑
             item["color"] = query.value("color");
             schedules.append(item);
         }
     }
     return schedules;
-
 }
 
 QList<QVariantMap> DatabaseManager::getSchedulesForDay(const QDate& date) {
@@ -79,7 +79,7 @@ QList<QVariantMap> DatabaseManager::getSchedulesForDay(const QDate& date) {
     QSqlQuery query;
 
     QString dateStr = date.toString("yyyy-MM-dd");
-    // 해당 날짜에 포함된 일정을 시작 시간 순으로 정렬하여 가져옴
+    // 모든 컬럼(*)을 가져오도록 쿼리 확인
     query.prepare("SELECT * FROM schedules WHERE start_time LIKE :date "
                   "ORDER BY start_time ASC");
     query.bindValue(":date", dateStr + "%");
@@ -87,8 +87,11 @@ QList<QVariantMap> DatabaseManager::getSchedulesForDay(const QDate& date) {
     if (query.exec()) {
         while (query.next()) {
             QVariantMap item;
+            item["id"] = query.value("id");
             item["title"] = query.value("title");
-            item["start"] = query.value("start_time"); // "2026-04-20 14:30:00"
+            item["start"] = query.value("start_time");
+            item["end"] = query.value("end_time"); // [추가] 종료 시간 매핑
+            item["color"] = query.value("color");
             schedules.append(item);
         }
     }

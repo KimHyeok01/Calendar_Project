@@ -412,14 +412,23 @@ CMakeFiles/Calendar.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
+ C:\workspace\exercise\Calendar\DatabaseManager.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qtsqlglobal.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qtsql-config.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qtsqlexports.h \
  C:/Qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
- C:/Qt/6.11.0/mingw_64/include/QtSql/QSqlError \
- C:/Qt/6.11.0/mingw_64/include/QtSql/qsqlerror.h \
  C:/Qt/6.11.0/mingw_64/include/QtSql/QSqlQuery \
  C:/Qt/6.11.0/mingw_64/include/QtSql/qsqlquery.h \
- C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug
+ C:/Qt/6.11.0/mingw_64/include/QtSql/QSqlError \
+ C:/Qt/6.11.0/mingw_64/include/QtSql/qsqlerror.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QVariantMap \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qvariantmap.h \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QMap \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/QString
